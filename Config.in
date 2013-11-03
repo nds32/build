@@ -4,27 +4,27 @@ mainmenu "nds32 toolchain configuration"
 
 choice
 	prompt "Architecture"
-	default TARGET_v3
+	default TARGET_V3
 	help
 	  The architecture of your target.
 
-config TARGET_v3m
+config TARGET_V3M
 	bool "v3m"
 
-config TARGET_v3
+config TARGET_V3
 	bool "v3"
 endchoice
 
 choice
 	prompt "Endian"
-	default TARGET_little_endian
+	default TARGET_LITTLE_ENDIAN
 	help
 	  The architecture of your target.
 
-config TARGET_little_endian
+config TARGET_LITTLE_ENDIAN
 	bool "Little endian"
 
-config TARGET_big_endian
+config TARGET_BIG_ENDIAN
 	bool "Big endian"
 endchoice
 
