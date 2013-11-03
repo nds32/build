@@ -48,3 +48,7 @@ config NEWLIB_LITE_EXIT
 	bool "lite exit"
 	default n
 endmenu
+
+config OUTPUT_DIR
+        string "Build output directory"
+        default "/tmp/output"
