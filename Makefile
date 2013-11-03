@@ -1,4 +1,4 @@
-CONFIG:=config
+CONFIG:=config.mak
 PWD:=$(shell pwd)
 KCONFIG_DIR:=$(PWD)/kconfig
 MCONF:=mconf
