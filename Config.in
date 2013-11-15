@@ -51,4 +51,4 @@ endmenu
 
 config OUTPUT_DIR
         string "Build output directory"
-        default "/tmp/output"
+        default "output"
