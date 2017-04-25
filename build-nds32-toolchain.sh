@@ -1,5 +1,12 @@
 export NDS32_ROOT=`pwd`
 
+mkdir src
+cd $NDS32_ROOT/src
+git clone https://github.com/nds32/gcc.git -b BSP410-nds32-elf-newlib-v3m
+git clone https://github.com/nds32/binutils.git -b BSP410-nds32-elf-newlib-v3m
+git clone https://github.com/nds32/newlib.git -b BSP410-nds32-elf-newlib-v3m
+
+cd $NDS32_ROOT
 rm -rf build/{binutils,gcc1,gcc2,newlib}
 mkdir -p build/{binutils,gcc1,gcc2,newlib}
 
