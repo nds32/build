@@ -6,7 +6,6 @@ mkdir -p build/{binutils,gcc1,gcc2,newlib}
 echo "Building binutils..."
 cd $NDS32_ROOT/build/binutils
 ../../src/binutils/configure --target=nds32le-elf --with-arch=v3m --prefix=$NDS32_ROOT/toolchain --disable-nls --enable-plugins --enable-16m-addr=yes
---enable-ex9-ext --enable-ifc-ext
 make
 make install
 
